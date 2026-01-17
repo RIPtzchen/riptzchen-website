@@ -1,0 +1,25 @@
+{
+  "pc_name": "RIPCHEN",
+  "owner": "Riptzchen",
+  "status": "Online & Ready to Grind",
+  "specs": {
+    "cpu": "Intel Core i9-9900K @ 3.60GHz (Der Hitzkopf)",
+    "gpu": "NVIDIA GeForce RTX 5070 (12GB - Future Tech)",
+    "ram": "64GB RAM (Genug für 2 Chrome Tabs)",
+    "os": "Windows 11 Pro"
+  },
+  "storage": [
+    "Samsung SSD 970 EVO Plus 500GB (System)",
+    "Samsung SSD 870 EVO 2TB (Games)",
+    "Seagate 2TB HDD (Datengrab)"
+  ],
+  "peripherals": {
+    "monitor": "Generic PnP Monitor (High Refresh Rate?)",
+    "keyboard": "Razer Huntsman Elite",
+    "mouse": "Razer Basilisk Ultimate",
+    "mic": "Razer Seiren",
+    "camera": "Razer Kiyo",
+    "mousepad": "Razer Firefly & Goliathus Chroma (Doppelt hält besser)"
+  },
+  "last_updated": "2026-01-17"
+}
