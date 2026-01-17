@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup & Gear | RIPtzchen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        twitch: '#9146FF',
+                        darkbg: '#0a0a0a',
+                        cardbg: '#171717',
+                        rage: '#ff003c',
+                        razer: '#00ff00', 
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Orbitron', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: #e5e5e5; }
+        .gear-card { transition: all 0.3s ease; }
+        .gear-card:hover { 
+            border-color: #9146FF; 
+            box-shadow: 0 0 20px rgba(145,70,255,0.15); 
+            transform: translateY(-5px); 
+        }
+        .razer-glow:hover {
+            border-color: #00ff00;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="antialiased p-6 md:p-12 max-w-7xl mx-auto selection:bg-twitch selection:text-white mb-20">
+
+    <a href="index.html" class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-12 group font-mono text-sm">
+        <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform text-twitch"></i> BACK TO BASE
+    </a>
+
+    <header class="mb-20 text-center relative">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-32 bg-twitch/20 blur-[100px] pointer-events-none"></div>
+        <h1 class="text-5xl md:text-8xl font-display font-black mb-6 uppercase text-white relative z-10">
+            MY <span class="text-transparent bg-clip-text bg-gradient-to-r from-twitch to-rage">ARSENAL</span>
+        </h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto font-mono">
+            Specs, Gear & Tools. Powered by Cores and Caffeine.
+        </p>
+    </header>
+
+    <section class="mb-24">
+        <div class="flex items-center gap-4 mb-10 border-b border-white/10 pb-4">
+            <i class="fas fa-server text-3xl text-rage"></i>
+            <h2 class="text-3xl font-display font-bold">THE ENGINE (PC Specs)</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="gear-card bg-[#171717] p-8 rounded-2xl border border-white/5 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i class="fas fa-video text-6xl"></i>
+                </div>
+                <div class="text-xs font-mono text-twitch mb-2 uppercase tracking-widest">Graphics Unit</div>
+                <h3 class="text-2xl font-bold mb-2 text-white">NVIDIA RTX 5070</h3>
+                <p class="text-gray-400 text-sm">Next Gen Power. 1440p @ 165Hz Monster.</p>
+            </div>
+
+            <div class="gear-card bg-[#171717] p-8 rounded-2xl border border-white/5 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i class="fas fa-microchip text-6xl"></i>
+                </div>
+                <div class="text-xs font-mono text-rage mb-2 uppercase tracking-widest">Processor</div>
+                <h3 class="text-2xl font-bold mb-2 text-white">Intel Core i9-9900K</h3>
+                <p class="text-gray-400 text-sm">8 Cores, 16 Threads. Der Klassiker, der immer noch liefert.</p>
+            </div>
+
+            <div class="gear-card bg-[#171717] p-8 rounded-2xl border border-white/5 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i class="fas fa-memory text-6xl"></i>
+                </div>
+                <div class="text-xs font-mono text-blue-400 mb-2 uppercase tracking-widest">Memory</div>
+                <h3 class="text-2xl font-bold mb-2 text-white">64 GB RAM</h3>
+                <p class="text-gray-400 text-sm">Genug Speicher für Chrome Tabs UND Gaming.</p>
+            </div>
+
+            <div class="gear-card bg-[#171717] p-8 rounded-2xl border border-white/5 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i class="fas fa-hdd text-6xl"></i>
+                </div>
+                <div class="text-xs font-mono text-green-400 mb-2 uppercase tracking-widest">Storage</div>
+                <h3 class="text-2xl font-bold mb-2 text-white">Samsung EVO NVMe</h3>
+                <p class="text-gray-400 text-sm">970 EVO Plus (System) + 870 EVO 2TB (Games).</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="mb-24">
+        <div class="flex items-center gap-4 mb-10 border-b border-white/10 pb-4">
+            <i class="fas fa-gamepad text-3xl text-razer"></i> <h2 class="text-3xl font-display font-bold">THE CONTROL (Peripherals)</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+             
+            <div class="gear-card razer-glow bg-[#171717] p-6 rounded-xl border border-white/5 flex flex-col items-center text-center">
+                <i class="fas fa-keyboard text-4xl text-gray-500 mb-4 group-hover:text-razer transition-colors"></i>
+                <h3 class="text-xl font-bold mb-1 text-white">Razer Huntsman Elite</h3>
+                <p class="text-gray-500 text-xs font-mono">Opto-Mechanical Switches</p>
+            </div>
+
+             <div class="gear-card razer-glow bg-[#171717] p-6 rounded-xl border border-white/5 flex flex-col items-center text-center">
+                <i class="fas fa-mouse text-4xl text-gray-500 mb-4 group-hover:text-razer transition-colors"></i>
+                <h3 class="text-xl font-bold mb-1 text-white">Razer Basilisk Ultimate</h3>
+                <p class="text-gray-500 text-xs font-mono">Wireless Precision</p>
+            </div>
+
+            <div class="gear-card razer-glow bg-[#171717] p-6 rounded-xl border border-white/5 flex flex-col items-center text-center">
+                <i class="fas fa-border-all text-4xl text-gray-500 mb-4 group-hover:text-razer transition-colors"></i>
+                <h3 class="text-xl font-bold mb-1 text-white">Razer Goliathus Chroma</h3>
+                <p class="text-gray-500 text-xs font-mono">Extended RGB Surface</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-24">
+        <div class="flex items-center gap-4 mb-10 border-b border-white/10 pb-4">
+            <i class="fas fa-broadcast-tower text-3xl text-twitch"></i>
+            <h2 class="text-3xl font-display font-bold">ON AIR</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="gear-card bg-[#171717] flex items-center p-6 rounded-xl border border-white/5 gap-6">
+                <div class="bg-black/50 p-4 rounded-full text-twitch">
+                    <i class="fas fa-microphone-lines text-2xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white">Razer Seiren</h3>
+                    <p class="text-gray-400 text-sm">Studio Grade Microphone</p>
+                </div>
+            </div>
+
+            <div class="gear-card bg-[#171717] flex items-center p-6 rounded-xl border border-white/5 gap-6">
+                <div class="bg-black/50 p-4 rounded-full text-twitch">
+                    <i class="fas fa-camera text-2xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white">Razer Kiyo</h3>
+                    <p class="text-gray-400 text-sm">Built-in Ring Light</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <p class="text-center text-gray-600 text-xs mt-20 font-mono opacity-50">
+        // SYSTEM DIAGNOSTIC COMPLETE // END OF FILE
+    </p>
+
+</body>
+</html>
